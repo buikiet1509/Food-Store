@@ -1,0 +1,118 @@
+html{
+  scroll-behavior: smooth;
+}
+.mainSection{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+@media (max-width: 750px) {
+  .mainSection {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+.mainLeftSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 30px;
+}
+.mainRightSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuButton{  
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #20a420;
+  color: rgb(236, 242, 242);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 60px;
+  margin-top: 30px;
+}
+.menuButton:hover {
+  background-color: #0f501f;
+  color: rgb(236, 242, 242);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 60px;
+  border: 1px solid rgb(112, 99, 99);
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+.dealsButton {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6e6e6;
+  color: #20a420;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 45px;
+}
+.dealsButton:hover {
+  background-color: #76a776;
+  color: rgb(236, 242, 242);
+  border: 1px solid rgb(112, 99, 99);
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+.menuSection{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 750px) {
+  .menuSection {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .menuSection {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+.menuTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuScripts{
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.menuItem {
+  font-size: 18px;
+  font-weight: bold;
+  color: #108110;
+  border: 1px solid #cbd0cb;
+  border-radius: 5px;
+  height: 465px;
+  margin-top: -10px;
+}
+h2{
+  font-size: 12px;
+  font-weight: bold;
+  color: #88c188;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -6px;
+}
+.aboutTitle {
+  color:#3bae3b; 
+  font-size: 40px; 
+  font-weight: bold; 
+  font-family: Playfair Display, serif; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 14vh;
+  background-color: #084517;
+  position: sticky;
+  top: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+
+}
+
+.leftSection {
+  width: 100px;  
+  height: 90px;
+  overflow: hidden;
+}
+.logo {
+  width: 100%;    
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background-color: transparent;
+
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.buttonOnHeader {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  color: rgb(218, 193, 193);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buttonOnHeader:hover {
+  color: rgb(255, 255, 255);
+}
+
+.buttonShopNow {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  color: rgb(218, 193, 193);
+  border: none;
+  cursor: pointer;
+}
+
+.buttonShopNow:hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(112, 99, 99);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.buttonHumburger {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  color: rgb(218, 193, 193);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+.buttonHumburger:hover {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(112, 99, 99);
+  border-radius: 3px;
+} 
+
+.dropdownButton{
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 800px) {
+  .buttonHumburger {
+    display: block;
+  }
+  .buttonOnHeader {
+    border: 1px solid rgb(174, 156, 156);
+    border-radius: 6px;
+    padding: 5px 10px; 
+    background-color: #188418; 
+  }
+
+  .dropdownButton {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 13.5vh;
+    right: 0;
+    background-color: #084517;
+    padding: 10px;
+    width: 150px;
+    border-radius: 6px;
+  }
+
+  .rightSection .dropdownButton.open {
+    display: flex;
+  }
+}
+
+.afterDropButton {
+  display: flex;
+  align-items: center;
+}
