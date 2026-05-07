@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Page</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./css/landingPage.css">
+      <link rel="stylesheet" href="./css/product.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="leftSection">
+        <img src="./image/logo12.png" alt="Logo" class="logo">
+      </div>
+      <div class="rightSection">
+        <div class="dropdownButton" id="dropdownButton">
+          <button class="buttonOnHeader" onclick="window.location.href='landingPage.html'">Home</button>
+          <button class="buttonOnHeader" onclick="window.location.href='landingPage.html#menuTitle'">Menu</button>
+          <button class="buttonOnHeader" onclick="window.location.href='landingPage.html#about'">About Us</button>
+          <button class="buttonOnHeader" onclick="window.location.href='cart.html'">🛒 </button>
+        </div>
+        <div class="afterDropButton">
+          <button class="buttonShopNow"><span style="font-size: 18px;">Order now -></span></button>
+          <button class="buttonHumburger" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gridProduct">
+
+      <div  class="productSection">
+        <img class="productImage" src="./image/gioNha.png" alt="Product Image" class="productImage">
+        <h1>Vietnamese Traditional Sausage</h1>
+        <h2>Price: $10</h2>
+        <div class="addToCartContainer">
+          <button class="addToCartButton">Add to Cart</button>
+        </div>
+      </div>
+
+      <div  class="productSection">
+        <img class="productImage" src="./image/xucXich.png" alt="Product Image" class="productImage">
+        <h1>Homemade Sausage</h1>
+        <h2>Price: $7</h2>
+        <div class="addToCartContainer">
+          <button class="addToCartButton">Add to Cart</button>
+        </div>
+      </div>
+
+      <div  class="productSection">
+        <img class="productImage" src="./image/moc.png" alt="Product Image" class="productImage">
+        <h1>Sausage Balls</h1>
+        <h2>Price: $7</h2>
+        <div class="addToCartContainer">
+          <button class="addToCartButton">Add to Cart</button>
+        </div>
+      </div>
+
+      <div  class="productSection">
+        <img class="productImage" src="./image/ruoc.png" alt="Product Image" class="productImage">
+        <h1>Pork Floss</h1>
+        <h2>Price: $7</h2>
+        <div class="addToCartContainer">
+          <button class="addToCartButton">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./jsFolder/scroll$toggle.js"></script>
+  </body>
+</html>

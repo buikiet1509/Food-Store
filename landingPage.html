@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./css/landingPage.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="leftSection">
+      <img src="./image/logo12.png" alt="Logo" class="logo">
+    </div>
+    <div class="rightSection">
+      <div class="dropdownButton" id="dropdownButton">
+        <button class="buttonOnHeader" onclick="scrollToSection('mainLeftSection')">Home</button>
+        <button class="buttonOnHeader" onclick="scrollToSection('menuTitle')">Menu</button>
+        <button class="buttonOnHeader" onclick="scrollToSection('about')">About Us</button>
+        <button class="buttonOnHeader" onclick="window.location.href='cart.html'">🛒 </button>
+      </div>
+      <div class="afterDropButton">
+        <button class="buttonShopNow" onclick="window.location.href='product.html'"><span style="font-size: 18px;">Order now -></span></button>
+        <button class="buttonHumburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </div>
+  <div id="mainLeftSection"></div><br><br>
+  <div class="mainSection">
+    <div class="mainLeftSection">
+      <p style="color:#a0c6a0; font-size: 40px; font-weight: bold; font-family: Playfair Display, serif;">
+        Linking Flavor to <span style="color:#008000;">Every Bite</span>
+      </p>
+      <p style="font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#658165;">
+        Delicious, consistent taste in every sausage they try. It highlights that each product is carefully made to
+        deliver rich flavor, quality ingredients, and a satisfying experience every time they take a bite.
+      </p>
+      <div>
+        <button class="menuButton">Menu</button>
+        <button class="dealsButton">Order Now</button>
+      </div>
+    </div>
+    <div class="mainRightSection">
+      <img src="./image/gio1.png" style="width: 100%; height: auto; border-radius: 10px; background-color: transparent;"
+        alt="Image">
+    </div>
+  </div>
+  <p id="menuTitle"></p><br><br>
+  <div class="menuTitle">
+    <p style="color:#3bae3b; font-size: 40px; font-weight: bold; font-family: Playfair Display, serif; padding: 6px 30px;">Our Menu</p>
+  </div>
+  <div class="menuSection">
+    <div class="menuItem">
+      <img src="./image/gioNha.png" style="width: 100%; height: 75%;background-color: transparent; border-radius: 5px;" alt="Menu Image">
+      <p class="menuScripts">Vietnamese Traditional Sausages</p>
+      <h2>Made with quality meat and spices, Vietnamese sausage delivers a rich, authentic taste in every bite.</h2>
+    </div>
+
+    <div class="menuItem" id="menuItem2">
+      <img src="./image/xucXich.png" style="width: 100%; height: 75%; background-color: transparent; border-radius: 5px;" alt="Menu Image">
+      <p class="menuScripts">Specialty Sausages</p>
+      <h2>Crafted with unique spices and quality ingredients, our sausages deliver bold, standout flavor.</h2>
+    </div>
+
+    <div class="menuItem" id="menuItem3">
+      <img src="./image/moc.png" style="width: 100%; height: 75%; background-color: transparent; border-radius: 5px;" alt="Menu Image">
+      <p class="menuScripts">Sausages Balls</p>
+      <h2>Delicious, bite-sized sausages that are perfect for any occasion.</h2>
+    </div>
+    <div class="menuItem" id="menuItem4">
+      <img src="./image/ruoc.png" style="width: 100%; height: 75%; background-color: transparent; border-radius: 5px;" alt="Menu Image">
+      <p class="menuScripts">Pork Floss</p>
+      <h2>Light, fluffy pork floss with a unique texture and flavor.</h2>
+    </div>
+  </div>
+  
+  <p id="about"></p><br><br>
+  <div class="aboutSection">
+    <p class="aboutTitle">Our Story</p>
+    <p style="font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#658165; padding: 0 30px;">
+      Sausage Delights was born out of a passion for creating delicious, high-quality sausages that bring joy to every
+      bite. Our journey began in a small kitchen, where we experimented with recipes and flavors to craft the
+      perfect sausage. Today, we are proud to share our love for sausages with the world, offering a wide range of
+      flavors that cater to every palate. At Sausage Delights, we believe that great food brings people together,
+      and we are committed to delivering exceptional taste and quality in every product we create.
+    </p>
+  </div>
+
+  <div class="footer">
+    <p style="color: #3bae3b; font-size: 18px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 30px;">
+      &copy; 2010 Sausage Delights. All rights reserved.
+    </p>
+  </div>
+
+  <script src="./jsFolder/scroll$toggle.js"></script>
+</body>
+
+</html>
